@@ -32,5 +32,30 @@ namespace LibraryAppEntity
                 Console.WriteLine($"{book.Name} {book.Title}");
             }
         }
+
+        public static void DisplayOneBook(LibraryEntities library, int bookId)
+        {
+            var book = library.Books.SingleOrDefault(b => b.BookId == bookId);
+
+            if (book != null)
+            {
+                Console.WriteLine($"Book {book.BookId} {book.Title} ({book.Year}) - ${book.Price}");
+            }
+        }
+
+        public static void UpdateBook(LibraryEntities library, int bookId, int newYear)
+        {
+            Console.WriteLine($"Update book with id={bookId} set year={newYear}");
+            var book = library.Books.SingleOrDefault(b => b.BookId == bookId);
+
+            if (book != null)
+            {
+                DisplayOneBook(library, bookId); //get old record
+                book.Year = newYear;
+                library.SaveChanges();
+
+                DisplayOneBook(library, bookId); //get new record
+            }
+        }
     }
 }

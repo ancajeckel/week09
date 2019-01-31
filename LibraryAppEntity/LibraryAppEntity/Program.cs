@@ -18,10 +18,23 @@ namespace LibraryAppEntity
 
                 // get books grouped by category (join)
                 LibraryQueries.GetBooksByCategory(myLibrary);
+
+                // update a book
+                LibraryQueries.UpdateBook(myLibrary, 3, 1950);
+
+                // insert new book and get inserted record
+                Book b = new Book
+                {
+                    BookId = 20,
+                    Title = "",
+                    PublisherId = 3,
+                    Year = 0,
+                    Price = 25
+                };
+                myLibrary.SaveChanges();
+                LibraryQueries.DisplayOneBook(myLibrary, 20);
             }
             Console.ReadKey();
         }
-
-
     }
 }
