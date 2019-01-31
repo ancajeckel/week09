@@ -20,19 +20,21 @@ namespace LibraryAppEntity
                 LibraryQueries.GetBooksByCategory(myLibrary);
 
                 // update a book
-                LibraryQueries.UpdateBook(myLibrary, 3, 1950);
+                LibraryQueries.UpdateBook(myLibrary, 3, 1948);
 
                 // insert new book and get inserted record
                 Book b = new Book
                 {
-                    BookId = 20,
-                    Title = "",
+                    BookId = 30,
+                    Title = "New book",
                     PublisherId = 3,
-                    Year = 0,
+                    Year = 1980,
                     Price = 25
                 };
+                myLibrary.Books.Add(b);
+
                 myLibrary.SaveChanges();
-                LibraryQueries.DisplayOneBook(myLibrary, 20);
+                LibraryQueries.DisplayOneBook(myLibrary, 30);
             }
             Console.ReadKey();
         }

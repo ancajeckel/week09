@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonSerialization", "JsonSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandling", "FileHandling\FileHandling.csproj", "{A14B0DC9-875F-4E2F-A4BD-8B94990AAE92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryAppEntity_refered", "LibraryAppEntity_refered\LibraryAppEntity_refered.csproj", "{01B0AC54-00D5-4CB8-AF9E-F8F70883AFB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A14B0DC9-875F-4E2F-A4BD-8B94990AAE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A14B0DC9-875F-4E2F-A4BD-8B94990AAE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A14B0DC9-875F-4E2F-A4BD-8B94990AAE92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B0AC54-00D5-4CB8-AF9E-F8F70883AFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B0AC54-00D5-4CB8-AF9E-F8F70883AFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B0AC54-00D5-4CB8-AF9E-F8F70883AFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B0AC54-00D5-4CB8-AF9E-F8F70883AFB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
