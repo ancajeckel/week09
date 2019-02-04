@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LibraryAppEntity;
+using System.Data.Entity;
 
 namespace LibraryAppEntity_refered
 {
@@ -24,9 +25,9 @@ namespace LibraryAppEntity_refered
                 Price = 25
             };
 
-            //myLibrary.Books.Add(b);
+            myLibrary.Books.Add(b);
 
-            //myLibrary.SaveChanges();
+            myLibrary.SaveChanges();
 
             Console.ReadKey();
         }
